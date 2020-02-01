@@ -95,15 +95,14 @@
   justify-content: center;
   margin-left: 55px;
   margin-right: 0px;
-
   background-image: url(images/logo.png);
-  background-size: contain;
+  /* background-size: contain; */
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 550px;;
+  background-size: 550px;
+
+  ;
   position: relative;
-
-
 }
 
 /* THIS WILL HOLD THE MENU */
@@ -113,7 +112,6 @@
   padding: 0;
   background-color: none;
 }
-
 
 .foot {
   height: 55px;
@@ -125,19 +123,16 @@
   align-self: center;
 }
 
-
 .twoImagesContainer {
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
-
 }
 
-.twoImagesContainer > .topIMG {
+.topIMG {
   flex: 1;
-  /* background-color: green; */
-  background-image: url(images/mv09_pc.jpg);
+  background-color: white;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -145,14 +140,13 @@
   position: relative;
   bottom: 0;
   left: 0;
-
   z-index: -1;
-
+  overflow: hidden;
 }
 
-.twoImagesContainer > .bottomIMG {
+.bottomIMG {
   flex: 1;
-  background-image: url(images/mv08_pc.jpg);
+  background-color: white;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -160,10 +154,9 @@
   position: relative;
   bottom: 0;
   left: 0;
-
-    z-index: -1;
+  z-index: -1;
+  overflow: hidden;
 }
-
 
 .centerLogo {
   background-image: url(images/logo.png);
@@ -173,6 +166,83 @@
   background-size: cover;
   position: relative;
   bottom: 0;
-  left: 0
-  flex: 0;
+  left: 0 flex: 0;
+}
+
+.topIMG img {
+  position: absolute;
+  animation: topIMG 25s infinite;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+  bottom: -50%;
+}
+
+@keyframes topIMG {
+  25% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+  }
+}
+
+.topIMG img:nth-child(5) {
+  animation-delay: 20s;
+}
+
+.topIMG img:nth-child(4) {
+  animation-delay: 15s;
+}
+
+.topIMG img:nth-child(3) {
+  animation-delay: 10s;
+}
+
+.topIMG img:nth-child(2) {
+  animation-delay: 5s;
+}
+
+.topIMG img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.bottomIMG img {
+  position: absolute;
+  animation: topIMG 25s infinite;
+  opacity: 0;
+  width: 100%;
+  height: auto;
+  bottom: -50%;
+}
+
+@keyframes bottomIMG {
+  25% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+  }
+}
+
+.bottomIMG img:nth-child(5) {
+  animation-delay: 20s;
+}
+
+.bottomIMG img:nth-child(4) {
+  animation-delay: 15s;
+}
+
+.bottomIMG img:nth-child(3) {
+  animation-delay: 10s;
+}
+
+.bottomIMG img:nth-child(2) {
+  animation-delay: 5s;
+}
+
+.bottomIMG img:nth-child(1) {
+  animation-delay: 0s;
 }
