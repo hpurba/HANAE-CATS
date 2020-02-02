@@ -185,7 +185,7 @@
 
 .topIMG img {
   position: absolute;
-  animation: topIMG 25s infinite;
+  animation: topIMG 70s infinite;
   opacity: 0;
   width: 100%;
   height: auto;
@@ -202,20 +202,44 @@
   }
 }
 
+/* .topIMG img:nth-child(11) {
+  animation-delay: 50s;
+}
+
+.topIMG img:nth-child(10) {
+  animation-delay: 45s;
+}
+
+.topIMG img:nth-child(9) {
+  animation-delay: 40s;
+}
+
+.topIMG img:nth-child(8) {
+  animation-delay: 35s;
+} */
+
+.topIMG img:nth-child(7) {
+  animation-delay: 60s;
+}
+
+.topIMG img:nth-child(6) {
+  animation-delay: 50s;
+}
+
 .topIMG img:nth-child(5) {
-  animation-delay: 20s;
+  animation-delay: 40s;
 }
 
 .topIMG img:nth-child(4) {
-  animation-delay: 15s;
+  animation-delay: 30s;
 }
 
 .topIMG img:nth-child(3) {
-  animation-delay: 10s;
+  animation-delay: 20s;
 }
 
 .topIMG img:nth-child(2) {
-  animation-delay: 5s;
+  animation-delay: 10s;
 }
 
 .topIMG img:nth-child(1) {
@@ -224,7 +248,7 @@
 
 .bottomIMG img {
   position: absolute;
-  animation: topIMG 25s infinite;
+  animation: bottomIMG 70s infinite;
   opacity: 0;
   width: 100%;
   height: auto;
@@ -241,25 +265,67 @@
   }
 }
 
+
+
+/* .bottomIMG img:nth-child(11) {
+  animation-delay: 50s;
+}
+
+.bottomIMG img:nth-child(10) {
+  animation-delay: 45s;
+}
+
+.bottomIMG img:nth-child(9) {
+  animation-delay: 40s;
+}
+
+.bottomIMG img:nth-child(8) {
+  animation-delay: 35s;
+} */
+
+.bottomIMG img:nth-child(7) {
+  animation-delay: 60s;
+}
+
+.bottomIMG img:nth-child(6) {
+  animation-delay: 50s;
+}
+
 .bottomIMG img:nth-child(5) {
-  animation-delay: 20s;
+  animation-delay: 40s;
 }
 
 .bottomIMG img:nth-child(4) {
-  animation-delay: 15s;
+  animation-delay: 30s;
 }
 
 .bottomIMG img:nth-child(3) {
-  animation-delay: 10s;
+  animation-delay: 20s;
 }
 
 .bottomIMG img:nth-child(2) {
-  animation-delay: 5s;
+  animation-delay: 10s;
 }
 
 .bottomIMG img:nth-child(1) {
   animation-delay: 0s;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .sidenav {
   height: 100%;
@@ -310,7 +376,6 @@
   }
 }
 
-
 .header_logo {
   width: 100px;
   height: 55px;
@@ -327,13 +392,9 @@
   margin-left: auto;
   margin-right: auto;
   /* left: 350px; */
-
 }
 
-
-
 /* FIRT PAGE */
-
 /* SECOND PAGE */
 .mainCenterProducts {
   width: 100%;
@@ -345,7 +406,6 @@
   flex-direction: column;
   margin-left: 55px;
   margin-right: 0px;
-
   /* background-size: contain; */
   background-position: center center;
   background-repeat: no-repeat;
@@ -364,24 +424,9 @@
   align-self: flex-start;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 * {
   box-sizing: border-box;
 }
-
 
 /* Center website */
 .main {
@@ -400,7 +445,7 @@ h1 {
 
 /* Add padding BETWEEN each column (if you want) */
 .row,
-.row > .column {
+.row>.column {
   padding: 8px;
 }
 
@@ -408,7 +453,8 @@ h1 {
 .column {
   float: left;
   width: 33.33%;
-  display: none; /* Hide columns by default */
+  display: none;
+  /* Hide columns by default */
 }
 
 /* Clear floats after rows */
@@ -446,10 +492,8 @@ h1 {
 /* Add a dark background color to the active button */
 .btn.active {
   background-color: #666;
-   color: white;
+  color: white;
 }
-
-
 
 /* DESIGNERS */
 .homePageContent {
