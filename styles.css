@@ -448,3 +448,21 @@ h1 {
   background-color: #666;
    color: white;
 }
+
+
+
+/* DESIGNERS */
+.homePageContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  left: 20px;
+  right: 20px;
+  background-color: #DBD9DB;
+  color: #747572;
+}
+
+.designersAboutText {
+  padding: 15px;
+}
