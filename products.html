@@ -19,26 +19,114 @@
     <a href="/en" class="englishButton centerText">EN</a>
     <a href="https://www.facebook.com/hikaru.purba" class="socialLinkButton facebook"></a>
     <a href="https://www.instagram.com/hikarupurba/" class="socialLinkButton instagram"></a>
+
+    <div class="header_logo" href="index.html">
+      <a href="index.html">
+        <div class="header_logo" href="index.html"></div>
+      </a>
+    </div>
+    <!-- <div class="header_logo" href="index.html"></div> -->
+
+    <a href="/en" class="englishButton centerText"></a>
+    <a href="/en" class="englishButton centerText"></a>
+    <a href="/en" class="englishButton centerText"></a>
+    <a href="/en" class="englishButton centerText"></a>
+
   </nav>
 
   <div class="mainCenterPortion">
-    <div class="mainCenterImages">
-      <div class="twoImagesContainer">
-        <div class="topIMG">
-          <img src="images/mv01_pc.jpg" alt="Slide 1" />
-          <img src="images/mv04_pc.jpg" alt="Slide 2" />
-          <img src="images/mv10_pc.jpg" alt="Slide 3" />
-          <img src="images/mv09_pc.jpg" alt="Slide 4" />
-          <img src="images/mv06_pc.jpg" alt="Slide 4" />
-        </div>
-        <div class="bottomIMG">
-          <img src="images/mv07_pc.jpg" alt="Slide 1" />
-          <img src="images/mv05_pc.jpg" alt="Slide 1" />
-          <img src="images/mv03_pc.jpg" alt="Slide 3" />
-          <img src="images/mv02_pc.jpg" alt="Slide 4" />
-          <img src="images/mv08_pc.jpg" alt="Slide 4" />
-        </div>
+    <div class="mainCenterProducts">
+
+      <div class="productsLabel">
+        <h1>TYPES OF CATS</h1>
       </div>
+
+
+
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+        <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+        <button class="btn" onclick="filterSelection('people')"> People</button>
+      </div>
+
+      <!-- Portfolio Gallery Grid -->
+      <div class="row">
+        <div class="column nature">
+          <div class="content">
+            <img src="images/mv01_pc.jpg" alt="Mountains" style="width:100%">
+            <h4>Mountains</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column nature">
+          <div class="content">
+            <img src="images/mv01_pc.jpg" alt="Lights" style="width:100%">
+            <h4>Lights</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column nature">
+          <div class="content">
+            <img src="images/mv01_pc.jpg" alt="Nature" style="width:100%">
+            <h4>Forest</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+
+        <div class="column cars">
+          <div class="content">
+            <img src="images/mv01_pc.jpg" alt="Car" style="width:100%">
+            <h4>Retro</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column cars">
+          <div class="content">
+            <img src="images/mv01_pc.jpg" alt="Car" style="width:100%">
+            <h4>Fast</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column cars">
+          <div class="content">
+            <img src="images/mv01_pc.jpg" alt="Car" style="width:100%">
+            <h4>Classic</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+
+        <div class="column people">
+          <div class="content">
+            <img src="images/mv01_pc.jpg" alt="People" style="width:100%">
+            <h4>Girl</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column people">
+          <div class="content">
+            <img src="images/mv01_pc.jpg" alt="People" style="width:100%">
+            <h4>Man</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="column people">
+          <div class="content">
+            <img src="images/mv01_pc.jpg" alt="People" style="width:100%">
+            <h4>Woman</h4>
+            <p>Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <!-- END GRID -->
+      </div>
+
+
+
+
+
+
+
+
     </div>
 
     <div class="rightBar">
@@ -92,5 +180,56 @@
       }
     </script>
 
+    <script type="text/javascript">
+      filterSelection("all") // Execute the function and show all columns
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("column");
+        if (c == "all") c = "";
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+
+      // Show filtered elements
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+
+      // Hide elements that are not selected
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+
   </div>
+
 </html>
