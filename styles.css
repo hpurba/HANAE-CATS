@@ -536,7 +536,7 @@ h1 {
 /* CATURDAY */
 
 .dashedBorder {
-  border-style: dashed;
+  border-style: dashed !important;
 }
 
 .responsiveIMG {
