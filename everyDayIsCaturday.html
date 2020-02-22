@@ -44,9 +44,8 @@
 
 
       <div class="homePageContent">
-
         <!-- LEFT SIDE TEXTBOX AREA -->
-        <div class="homePageContentElement homePageText">
+        <div class="homePageContentElement homePageText dashedBorder">
           <p class="designersAboutText">
             <strong>MEOW! LEARN MORE ABOUT MEOW!</strong>
           </p>
@@ -56,15 +55,10 @@
           </p>
         </div>
 
+
         <!-- RIGHT SIDE BUTTON AND IMAGE GENERATOR -->
-        <div class="homePageContentElement">
+        <div class="homePageContentElement dashedBorder">
           <fieldset class="margin30">
-            <!-- <legend>
-              <h1>Where is Your Weather?</h1>
-            </legend> -->
-            <!-- <h1>Where is Your Weather?</h1> -->
-            <!-- <label>Enter a U.S. city</label>
-            <input id="weatherInput" type="text"></input><br /> -->
             <div class="horizontalCenter">
               <input id="NewCatPictureSubmit" type="submit" value="LIKE!" class="button"></input>
               <input id="NewCatPictureSubmit" type="submit" value="DISLIKE!" class="button"></input>
@@ -72,11 +66,16 @@
           </fieldset>
 
           <!-- IMAGE OF CAT -->
-          <div id="NewCatPictureResult">
+          <div class="dashedBorder">
+            <div id="NewCatPictureResult">
+            </div>
           </div>
-          <script text="type/javascript" src="script.js">
-          </script>
+
+          <!-- <script text="type/javascript" src="script.js">
+          </script> -->
         </div>
+
+
       </div>
     </div>
 
@@ -136,55 +135,7 @@
       }
     </script>
 
-    <!-- <script type="text/javascript">
-      filterSelection("all") // Execute the function and show all columns
-      function filterSelection(c) {
-        var x, i;
-        x = document.getElementsByClassName("column");
-        if (c == "all") c = "";
-        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-        for (i = 0; i < x.length; i++) {
-          w3RemoveClass(x[i], "show");
-          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-        }
-      }
-
-      // Show filtered elements
-      function w3AddClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-          if (arr1.indexOf(arr2[i]) == -1) {
-            element.className += " " + arr2[i];
-          }
-        }
-      }
-
-      // Hide elements that are not selected
-      function w3RemoveClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-          while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
-          }
-        }
-        element.className = arr1.join(" ");
-      }
-
-      // Add active class to the current button (highlight it)
-      var btnContainer = document.getElementById("myBtnContainer");
-      var btns = btnContainer.getElementsByClassName("btn");
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-        });
-      }
-    </script> -->
+    <script text="type/javascript" src="script.js">    </script>
 
     <!-- CAT CURSOR -->
     <style type="text/css">
