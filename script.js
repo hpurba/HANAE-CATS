@@ -1,3 +1,4 @@
+
 document.getElementById("NewCatPictureSubmit").addEventListener("click", function(event) {
 event.preventDefault();
 
