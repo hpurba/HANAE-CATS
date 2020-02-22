@@ -20,7 +20,6 @@ fetch(url)
     results += json[0].url;
     results += '" class="responsiveIMG"/>';
 
-    // results += '<img src="' + json[0].url + '"/>';
     document.getElementById("NewCatPictureResult").innerHTML = results;
 
   });
