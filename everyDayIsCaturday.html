@@ -35,52 +35,60 @@
   </nav>
 
   <div class="mainCenterPortion">
-    <div class="mainCenterProducts">
 
+    <div class="mainCenterProducts">
+      <!-- TOP HEADER TEXT -->
       <div class="productsLabel">
-        <h1>DESIGNERS</h1>
+        <h1>RELAX! LET EVERYDAY BE CATURDAY</h1>
       </div>
 
+
       <div class="homePageContent">
+
+        <!-- LEFT SIDE TEXTBOX AREA -->
         <div class="homePageContentElement homePageText">
           <p class="designersAboutText">
-            <strong>DESIGNERS: HANAE & HIKARU</strong>
+            <strong>MEOW! LEARN MORE ABOUT MEOW!</strong>
           </p>
           <br>
           <p class="designersAboutText">
-            MY WIFE (HANAE) LOVES CATS. CATS. CATS. CATS.
-            Together with Hanae, we have designed this beautiful website to give you the full cat experience you could ever wish for.
-            I am dedicating this website to her! I love my wife so much!
-            Even though I don't like cats, I will someday giver her the cats that she wants.
-            I have a pretty good idea what kind of cat she wants becasue she is always talking about her favorite cats on YouTube.
-            HANAE IS AWESOME!
+            HERE WILL BE CAT FACTS GENERATED FROM AN API
           </p>
         </div>
 
+        <!-- RIGHT SIDE BUTTON AND IMAGE GENERATOR -->
         <div class="homePageContentElement">
-          <img src="files/images/profilePicHikaruHanae.jpg" alt="profilePicHikaruHanae" title="profilePicHikaruHanae" width=650px>
+          <fieldset class="margin30">
+            <!-- <legend>
+              <h1>Where is Your Weather?</h1>
+            </legend> -->
+            <!-- <h1>Where is Your Weather?</h1> -->
+            <!-- <label>Enter a U.S. city</label>
+            <input id="weatherInput" type="text"></input><br /> -->
+            <div class="horizontalCenter">
+              <input id="NewCatPictureSubmit" type="submit" value="LIKE!" class="button"></input>
+              <input id="NewCatPictureSubmit" type="submit" value="DISLIKE!" class="button"></input>
+            </div>
+          </fieldset>
+
+          <!-- IMAGE OF CAT -->
+          <div id="NewCatPictureResult">
+          </div>
+          <script text="type/javascript" src="script.js">
+          </script>
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
     </div>
 
 
-
+    <!-- RIGHT SIDE SLIDE OUT MENU -->
     <div class="rightBar">
       <span style="font-size:20px;cursor:pointer" onclick="openNav()">
         <div class="sideMenuBtn"></div>
       </span>
     </div>
 
+    <!-- RIGHT SIDE SLIDE OUT MENU -->
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <nav>
@@ -89,16 +97,16 @@
           <li><a href="catfinder.html">CATFINDER</a></li>
           <li><a href="products.html">PRODUCTS</a></li>
           <li><a href="designers.html">DESIGNERS</a></li>
-<li><a href="everyDayIsCaturday.html">CATURDAY</a></li>
+          <li><a href="everyDayIsCaturday.html">CATURDAY</a></li>
           <!-- <li><a href="shoplist.html">SHOP LIST</a></li> -->
           <li><a href="mailto:hikaru.purba@gmail.com">CONTACT</a></li>
           <!-- <li><a href="store.html" target="_blank">ONLINE STORE</a></li> -->
         </ul>
       </nav>
       <div class="menu-close"></div>
-      </section>
     </div>
 
+    <!-- PAGE FOOTER -->
     <footer class="foot">
       <span>
         &copy; 2020 HANAE&amp;Cats.
@@ -117,18 +125,18 @@
     <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "200px";
-        document.getElementById("main").style.marginLeft = "200px";
+        // document.getElementById("main").style.marginLeft = "200px";
         document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
       }
 
       function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
-        document.getElementById("main").style.marginLeft = "0";
+        // document.getElementById("main").style.marginLeft = "0";
         document.body.style.backgroundColor = "white";
       }
     </script>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       filterSelection("all") // Execute the function and show all columns
       function filterSelection(c) {
         var x, i;
@@ -176,15 +184,14 @@
           this.className += " active";
         });
       }
-    </script>
+    </script> -->
 
+    <!-- CAT CURSOR -->
     <style type="text/css">
       * {
         cursor: url(http://cur.cursors-4u.net/nature/nat-8/nat733.cur), auto !important;
       }
     </style><a href="http://www.cursors-4u.com/cursor/2009/05/05/cat-paw.html" target="_blank" title="Cat Paw"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Cat Paw" style="position:absolute; top: 0px; right: 0px;" /></a>
-
-
   </div>
 
 </html>
