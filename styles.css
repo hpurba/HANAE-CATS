@@ -550,4 +550,5 @@ h1 {
 .minBox {
   min-width: 500px;
   min-height: 300px;
+  border-style: dashed !important;  
 }
