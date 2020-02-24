@@ -546,3 +546,8 @@ h1 {
   object-fit: cover;
   background-repeat: no-repeat;
 }
+
+.minBox {
+  min-width: 500px;
+  min-height: 300px;
+}
